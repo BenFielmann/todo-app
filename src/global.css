@@ -2,7 +2,7 @@
 *,
 
 :root{
-  --ff-primary: "Roboto", sans-serif
+  --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Montserrat", sans-serif;
   --primary: #FE4775;
   --secondary: #161060;
