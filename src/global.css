@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500;900&display=swap");
 *,
-
-:root{
+:root {
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Montserrat", sans-serif;
-  --primary: #FE4775;
+  --primary: #fe4775;
   --secondary: #161060;
-  --text-primary: #111111;
-  --content-passieve: #D4D4D4;
+  --text-primary: #111;
+  --content-passieve: #d4d4d4;
   --fw-primary: 500;
   --fw-primary-bold: 900;
   --fw-secondary: 600;
-} 
+}
 
 *::after,
 *::before {
@@ -23,7 +22,7 @@ html {
 }
 
 body {
-  font-family:var(--ff-primary)
+  font-family: var(--ff-primary);
   margin: 0;
 }
 
@@ -33,5 +32,5 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family:var(--ff-primary)
+  font-family: var(--ff-primary);
 }
