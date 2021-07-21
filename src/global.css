@@ -1,6 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500;900&display=swap');
 *,
+
+:root{
+  --ff-primary: "Roboto", sans-serif
+  --ff-secondary: "Montserrat", sans-serif;
+  --primary: #FE4775;
+  --secondary: #161060;
+  --text-primary: #111111;
+  --content-passieve: #D4D4D4;
+  --fw-500: 600;
+  --fw-500: 500;
+  --fw-900: 900;
+}
+
 *::after,
 *::before {
   box-sizing: border-box;
