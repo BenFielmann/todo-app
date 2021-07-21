@@ -8,10 +8,10 @@
   --secondary: #161060;
   --text-primary: #111111;
   --content-passieve: #D4D4D4;
-  --fw-500: 600;
-  --fw-500: 500;
-  --fw-900: 900;
-}
+  --fw-primary: 500;
+  --fw-primary-bold: 900;
+  --fw-secondary: 600;
+} 
 
 *::after,
 *::before {
