@@ -28,60 +28,36 @@
   color: rgb(192, 15, 59);
 }
 
-/*__add-task-button______________________________________________________________*/
-
-button {
-  padding: 15px 40px;
-  background: rgb(192, 15, 59);
-  border: 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: helvetica;
-  font-size: 12px;
-  letter-spacing: 3px;
-  position: relative;
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  cursor: pointer;
-  display: block;
-  margin: 100px auto;
+/*________________________________________________________________*/
+.add-task-button .add-task-button {
+  margin: 10px;
 }
 
-button::after,
-button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+.add-task-button input[type="submit"] {
   opacity: 0;
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: fixed;
+  width: 0;
 }
 
-button::after {
-  width: 30px;
-  height: 1px;
-  background: white;
-  transform: translateX(-3px);
-  margin-top: 0;
+.add-task-button label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 2px solid #444;
+  border-radius: 4px;
 }
 
-button::before {
-  content: "";
-  transform: rotate(-135deg) translateX(50%);
-  width: 11px;
-  height: 11px;
-  background: transparent;
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
-  margin-top: -1px;
+.add-task-button label:hover {
+  background-color: #dfd;
 }
 
-button:hover {
-  padding: 15px 60px 15px 20px;
+.add-task-button input[type="submit"]:focus + label {
+  border: 2px dashed #444;
 }
 
-button:hover::after,
-button:hover::before {
-  opacity: 1;
-  right: 15px;
+.add-task-button input[type="submit"]:checked + label {
+  background-color: #bfb;
+  border-color: #4c4;
 }
