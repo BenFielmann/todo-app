@@ -1,21 +1,42 @@
 <form>
   <fieldset>
-    <label>DESCRIBTION</label>
     <section>
       <p>
-        <input type="element" />
+        <input type="text" class="text" placeholder="Enter Task" />
+        <label>DESCRIPTION</label>
       </p>
     </section>
     <fieldset>
-      <legend>Wehn</legend>
       <section>
-        <p>
-          <input type="radio" name="wehn" id="date" />
-        </p>
-      </section>
-      <section>
-        <input type="submit-button" />
+        <legend>Wehn</legend>
+        <div class="radio-toolbar">
+          <input
+            type="radio"
+            id="radioToday"
+            name="date"
+            value="Today"
+            checked="checked"
+          />
+          <label for="radioToday">Today</label>
+          <input
+            type="radio"
+            id="radioTomorrow"
+            name="date"
+            value="radioTomorrow"
+          />
+          <label for="radioTomorrow">Tomorrow</label>
+          <input
+            type="radio"
+            id="radioSelectDate"
+            name="date"
+            value="radioSelect"
+          />
+          <label for="radioSelectDate">Select Date</label>
+        </div>
       </section>
     </fieldset>
+    <section>
+      <input type="submit" />
+    </section>
   </fieldset>
 </form>
