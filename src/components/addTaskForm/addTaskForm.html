@@ -1,0 +1,44 @@
+<form class="form-new-task">
+  <div class="wrapper">
+    <p>
+      <label class="label-describtion">DESCRIPTION</label>
+      <input type="text" class="text" placeholder="Enter Task" />
+    </p>
+    <fieldset>
+      <legend>When</legend>
+      <div class="radio-date-button">
+        <div>
+          <input
+            type="radio"
+            id="radioToday"
+            name="date"
+            value="Today"
+            checked="checked"
+          />
+          <label for="radioToday">Today</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="radioTomorrow"
+            name="date"
+            value="radioTomorrow"
+          />
+          <label for="radioTomorrow">Tomorrow</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="radioSelectDate"
+            name="date"
+            value="radioSelect"
+          />
+          <label for="radioSelectDate">Select Date</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <section class="add-task-button">
+    <input type="submit" id="AddTask" name="send" value="AddTask" />
+  </section>
+</form>
