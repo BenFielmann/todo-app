@@ -1,50 +1,61 @@
-.radio-date-button {
-  margin: 10px;
+.wrapper {
+  margin-left: 10%;
+}
+
+.wrapper p {
+  margin-bottom: 50%;
 }
 
 .radio-date-button input[type="radio"] {
   opacity: 0;
-  position: fixed;
   width: 0;
 }
 
-.radio-date-button label {
-  display: inline-block;
-  color: rgb(95, 94, 94);
-  padding: 10px 20px;
-  font-family: sans-serif, Arial;
-  font-size: 16px;
+.radio-date-button {
+  color: var(--secondary);
+  display: flex;
+  justify-content: space-around;
 }
 
 .radio-date-button label:hover {
-  color: rgb(238, 108, 140);
+  color: var(--primary);
 }
 
 .radio-date-button input[type="radio"]:focus + label {
-  color: rgb(192, 15, 59);
+  color: var(--primary);
 }
 
 .radio-date-button input[type="radio"]:checked + label {
-  color: rgb(192, 15, 59);
+  color: var(--primary);
 }
 
-/*________________________________________________________________*/
-
-.add-task-button {
-  margin: 100px;
-}
+/*____________________________________________________________________________________________________________________________________*/
 
 .add-task-button input[type="submit"] {
-  opacity: 0;
-  position: absolute;
-  width: 0;
-}
-
-.add-task-button label {
   display: inline-block;
-  background-color: rgb(192, 15, 59);
+  background-color: var(--primary);
   color: rgb(255, 255, 255);
   padding: 10px 20px;
   font-family: sans-serif, Arial;
   font-size: 16px;
+  width: 100%;
 }
+
+.add-task-button input[type="submit"]:hover {
+  color: var(--text-primary);
+}
+
+.form-new-task {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.label-describtion {
+  display: block;
+}
+
+/*.radio-date-button {
+  margin: 10px;
+}*/

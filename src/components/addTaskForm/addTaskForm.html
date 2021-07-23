@@ -1,15 +1,13 @@
-<form>
-  <fieldset>
-    <section>
-      <p>
-        <label>DESCRIPTION</label>
-        <input type="text" class="text" placeholder="Enter Task" />
-      </p>
-    </section>
+<form class="form-new-task">
+  <div class="wrapper">
+    <p>
+      <label class="label-describtion">DESCRIPTION</label>
+      <input type="text" class="text" placeholder="Enter Task" />
+    </p>
     <fieldset>
-      <section>
-        <legend>Wehn</legend>
-        <div class="radio-date-button">
+      <legend>When</legend>
+      <div class="radio-date-button">
+        <div>
           <input
             type="radio"
             id="radioToday"
@@ -18,6 +16,8 @@
             checked="checked"
           />
           <label for="radioToday">Today</label>
+        </div>
+        <div>
           <input
             type="radio"
             id="radioTomorrow"
@@ -25,6 +25,8 @@
             value="radioTomorrow"
           />
           <label for="radioTomorrow">Tomorrow</label>
+        </div>
+        <div>
           <input
             type="radio"
             id="radioSelectDate"
@@ -33,11 +35,10 @@
           />
           <label for="radioSelectDate">Select Date</label>
         </div>
-      </section>
+      </div>
     </fieldset>
-    <section class="add-task-button">
-      <input type="submit" id="AddTask" name="send" value="AddTask" />
-      <label for="AddTask">Add Task</label>
-    </section>
-  </fieldset>
+  </div>
+  <section class="add-task-button">
+    <input type="submit" id="AddTask" name="send" value="AddTask" />
+  </section>
 </form>
