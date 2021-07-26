@@ -2,13 +2,13 @@
   display: block;
 }
 
-.taskItem_checkbox {
+.taskItem__checkbox {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.taskItem_checkbox:checked + .taskItem_labelText {
+.taskItem__checkbox:checked + .taskItem__labelText {
   text-decoration: line-through 0.14em var(--primary);
 
 }
