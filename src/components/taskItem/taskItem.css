@@ -1,0 +1,14 @@
+.taskItem {
+  display: block;
+}
+
+.taskItem_checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.taskItem_checkbox:checked + .taskItem_labelText {
+  text-decoration: line-through 0.14em var(--primary);
+
+}
