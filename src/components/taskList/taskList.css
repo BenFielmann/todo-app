@@ -1,0 +1,50 @@
+.taskListContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.taskList {
+  white-space: pre-line;
+  margin: auto;
+}
+
+.task {
+  margin: 1.6rem 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+input[name="task"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through solid var(--primary) 2px;
+}
+
+.taskListRadioBtnGrp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  margin-right: 15px;
+  color: hsla(0, 0%, 0%, 0.2);
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  transform: rotate(180deg);
+}
+
+.taskListRadioBtnGrp input {
+  size: 0;
+  opacity: 0;
+}
+
+.taskListRadioBtnGrp label {
+  cursor: pointer;
+}
+
+.taskListRadioBtnGrp input:checked + label {
+  color: var(--primary);
+}
