@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 5fr;
 }
 
-.taskList {
+.task-list {
   white-space: pre-line;
   margin: auto;
   overflow-y: scroll;
@@ -13,8 +13,7 @@
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
-}s
-
+}
 .task {
   margin: 1.6rem 0;
   font-size: 1.2rem;
