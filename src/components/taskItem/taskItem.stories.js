@@ -1,11 +1,11 @@
 import "./taskItem.css";
-import taskItem from "./taskItem.html";
+import taskItemRegular from "./taskItemRegular.html";
 import taskItemDone from "./taskItemDone.html";
 
 export default {
   title: "Components/TaskItem",
-  parameters: { layout: "fullscreen" },
+  parameters: { layout: "centered" },
 };
 
-export const taskItemExp = () => taskItem;
+export const regular = () => taskItemRegular;
 export const done = () => taskItemDone;
