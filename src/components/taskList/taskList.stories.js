@@ -3,7 +3,7 @@ import taskList from "./taskList.html";
 
 export default {
   title: "Components/TaskList",
-  parameters: { layout: "fullscreen" },
+  parameters: { layout: "centered" },
 };
 
-export const taskListExp = () => taskList;
+export const regular = () => taskList;
