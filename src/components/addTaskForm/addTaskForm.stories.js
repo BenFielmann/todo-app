@@ -2,7 +2,7 @@ import "./addTaskForm.css";
 import addTaskForm from "./addTaskForm.html";
 
 export default {
-  title: "TaskForm",
+  title: "Components/TaskForm",
   parameters: { layout: "fullscreen" },
 };
 

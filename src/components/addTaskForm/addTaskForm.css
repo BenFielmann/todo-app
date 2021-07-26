@@ -1,4 +1,4 @@
-/*---Task-Form---*/
+/* ---Task-Form--- */
 .form-new-task {
   min-height: 100vh;
   display: flex;
@@ -15,7 +15,7 @@
   margin-bottom: 50%;
 }
 
-/*---Text-field---*/
+/* ---Text-field--- */
 
 .text-field {
   border: 0;
@@ -29,7 +29,7 @@
   opacity: 0.5;
 }
 
-/*---Radio-Buttons---*/
+/* ---Radio-Buttons--- */
 
 .radio-date-button input[type="radio"] {
   opacity: 0;
@@ -51,7 +51,7 @@
   color: var(--primary);
 }
 
-/*---New-task-Button---*/
+/* ---New-task-Button--- */
 
 .add-task-button input[type="submit"] {
   display: inline-block;
