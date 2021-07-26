@@ -1,5 +1,6 @@
 import "./taskItem.css";
 import taskItem from "./taskItem.html";
+import taskItemDone from "./taskItemDone.html";
 
 export default {
   title: "Components/TaskItem",
@@ -7,3 +8,4 @@ export default {
 };
 
 export const taskItemExp = () => taskItem;
+export const done = () => taskItemDone;
