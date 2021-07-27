@@ -43,6 +43,7 @@ textarea {
 }
 
 .menuButton {
+  padding: 1em;
   grid-column: 1/3;
   justify-self: start;
 }
