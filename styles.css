@@ -15,6 +15,7 @@
   --clr-text-secondary: #111;
   --clr-text-passive: hsla(0, 0%, 0%, 0.55);
   --clr-content-passive: #fbfbfb;
+  --clr-enter-task: #58585886;
   --fw-primary: 400;
   --fw-secondary: 600;
 }
