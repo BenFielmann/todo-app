@@ -1,3 +1,8 @@
+import {
+  parseJSONEFromLocalStorage,
+  stringifyJSONToLocalStorage,
+} from "./utils/localstorage.js";
+
 function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
   taskListItem.className = "taskItem";
@@ -39,4 +44,3 @@ const tasks = [
 const taskListItems = tasks.map((task) => createTaskListItem(task));
 
 taskList.append(...taskListItems);
-
