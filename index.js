@@ -39,3 +39,4 @@ const tasks = [
 const taskListItems = tasks.map((task) => createTaskListItem(task));
 
 taskList.append(...taskListItems);
+
