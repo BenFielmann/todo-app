@@ -1,5 +1,5 @@
 import {
-  parseJSONEFromLocalStorage,
+  parseJSONFromLocalStorage,
   stringifyJSONToLocalStorage,
 } from "./utils/localstorage.js";
 
