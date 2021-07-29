@@ -5,7 +5,8 @@ export function parseJSONFromLocalStorage(key, defaueltValue) {
     return defaueltValue;
   }
 
-  return json;
+  const data = JSON.parse(json);
+  return data;
 }
 
 export function stringifyJSONToLocalStorage(key, value) {
