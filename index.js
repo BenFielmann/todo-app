@@ -25,6 +25,10 @@ const taskListItems = tasks.map((task) => createTaskListItem(task));
 
 taskList.append(...taskListItems);
 
+const Today = document.getElementById("Today");
+const Tomorrow = document.getElementById("Tomorrow");
+const ThisWeek = document.getElementById("ThisWeek");
+
 /*const tasks = [
   {
     title: "listen",
