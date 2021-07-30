@@ -16,7 +16,12 @@ form.onsubmit = function (event) {
   taskObject.date = document.querySelector(".addTaskForm__radio:checked").value;
   taskObject.name = document.querySelector(".addTaskForm__textInput").value;
 
-  //console.log(checkedDateIput, textInput);
+  const newTasks = parseJSONFromLocalStorage("task", []);
 
-  stringifyJSONToLocalStorage("task", taskObject);
+  newTasks.push(taskObject);
+
+  stringifyJSONToLocalStorage("task", newTasks);
 };
+
+/*stringifyJSONToLocalStorage("pizza", "box");
+console.log(parseJSONFromLocalStorage ("task", []))*/
