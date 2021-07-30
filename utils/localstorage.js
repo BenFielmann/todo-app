@@ -1,8 +1,8 @@
-export function parseJSONFromLocalStorage(key, defaueltValue) {
-  const json = JSON.parsen(localStorage.getItem(key));
+export function parseJSONFromLocalStorage(key, defaultValue) {
+  const json = localStorage.getItem(key);
 
   if (!json) {
-    return defaueltValue;
+    return defaultValue;
   }
 
   const data = JSON.parse(json);
