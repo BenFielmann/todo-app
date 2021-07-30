@@ -115,7 +115,11 @@ h6 {
   letter-spacing: 0.2em;
 }
 
-.taskNavLink--active {
+.taskNavLinkButton {
+  display: none;
+}
+
+.taskNavLinkButton:checked + span {
   color: var(--clr-primary);
 }
 

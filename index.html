@@ -18,11 +18,37 @@
           <img src="./assets/notificationIcon.svg" alt="Notification Bell" />
         </button>
       </div>
-
       <section class="dateSelector">
-        <a href="#" class="taskNavLink">Today</a>
-        <a href="#" class="taskNavLink">Tomorrow</a>
-        <a href="#" class="taskNavLink">This Week</a>
+        <label>
+          <input
+            class="taskNavLinkButton"
+            type="radio"
+            name="when"
+            value="Select Date"
+            id="Today"
+          />
+          <span class="taskNavLink">Today</span>
+        </label>
+        <label>
+          <input
+            class="taskNavLinkButton"
+            type="radio"
+            name="when"
+            value="Select Date"
+            id="Tomorrow"
+          />
+          <span class="taskNavLink">Tomorrow</span>
+        </label>
+        <label>
+          <input
+            class="taskNavLinkButton"
+            type="radio"
+            name="when"
+            value="Select Date"
+            id="ThisWeek"
+          />
+          <span class="taskNavLink">This Week</span>
+        </label>
       </section>
       <section class="taskList"></section>
       <button aria-label="Add new task" class="actionButton">
