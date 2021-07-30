@@ -1,7 +1,4 @@
-import {
-  parseJSONFromLocalStorage,
-  stringifyJSONToLocalStorage,
-} from "./utils/localstorage.js";
+import { parseJSONFromLocalStorage } from "./utils/localstorage.js";
 
 function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
@@ -13,17 +10,22 @@ function createTaskListItem(task) {
 
   const taskItemText = document.createElement("span");
   taskItemText.className = "taskItem__labelText";
-  taskItemText.innerText = task.title;
+  taskItemText.innerText = task.name;
 
   taskListItem.append(taskItemInput);
   taskListItem.append(taskItemText);
   taskList.append(taskListItem);
-
   return taskListItem;
 }
 /* _______________________________________________________________________________ */
 const taskList = document.querySelector(".taskList");
-const tasks = [
+const tasks = parseJSONFromLocalStorage("task", []);
+
+const taskListItems = tasks.map((task) => createTaskListItem(task));
+
+taskList.append(...taskListItems);
+
+/*const tasks = [
   {
     title: "listen",
     date: "tomorrow",
@@ -39,8 +41,4 @@ const tasks = [
     date: "tomorrow",
     isDone: true,
   },
-];
-
-const taskListItems = tasks.map((task) => createTaskListItem(task));
-
-taskList.append(...taskListItems);
+];*/
