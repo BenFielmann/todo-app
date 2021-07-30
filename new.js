@@ -21,6 +21,7 @@ form.onsubmit = function (event) {
   newTasks.push(taskObject);
 
   stringifyJSONToLocalStorage("task", newTasks);
+  location.href = "index.html";
 };
 
 /*stringifyJSONToLocalStorage("pizza", "box");
