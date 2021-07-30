@@ -1,18 +1,6 @@
-const actionbutton = document.querySelector(".action-button");
-actionbutton.onclick = createTaskListItem;
+import { parseJSONFromLocalStorage } from "./utils/localstorage.js";
 
-function sendAlert() {
-  alert("Hello World");
-}
-
-const taskList = document.querySelector(".taskList");
-
-const newTask = document.createElement("p");
-newTask.innerText = "Example Task";
-
-taskList.append(newTask);
-
-function createTaskListItem() {
+function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
   taskListItem.className = "taskItem";
 
@@ -22,11 +10,35 @@ function createTaskListItem() {
 
   const taskItemText = document.createElement("span");
   taskItemText.className = "taskItem__labelText";
-  taskItemText.innerText = "Example Task";
+  taskItemText.innerText = task.name;
 
   taskListItem.append(taskItemInput);
   taskListItem.append(taskItemText);
   taskList.append(taskListItem);
-
   return taskListItem;
 }
+/* _______________________________________________________________________________ */
+const taskList = document.querySelector(".taskList");
+const tasks = parseJSONFromLocalStorage("task", []);
+
+const taskListItems = tasks.map((task) => createTaskListItem(task));
+
+taskList.append(...taskListItems);
+
+/*const tasks = [
+  {
+    title: "listen",
+    date: "tomorrow",
+    isDone: true,
+  },
+  {
+    title: "to",
+    date: "tomorrow",
+    isDone: true,
+  },
+  {
+    title: "music",
+    date: "tomorrow",
+    isDone: true,
+  },
+];*/
