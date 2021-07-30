@@ -16,12 +16,14 @@ form.onsubmit = function (event) {
   taskObject.date = document.querySelector(".addTaskForm__radio:checked").value;
   taskObject.name = document.querySelector(".addTaskForm__textInput").value;
 
-  const newTasks = parseJSONFromLocalStorage("task", []);
+  if (taskObject.name !== "") {
+    const newTasks = parseJSONFromLocalStorage("task", []);
 
-  newTasks.push(taskObject);
+    newTasks.push(taskObject);
 
-  stringifyJSONToLocalStorage("task", newTasks);
-  location.href = "index.html";
+    stringifyJSONToLocalStorage("task", newTasks);
+    location.href = "index.html";
+  }
 };
 
 /*stringifyJSONToLocalStorage("pizza", "box");
